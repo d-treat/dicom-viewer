@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
-
 import NavBar from '../NavBar';
 import Svg from '../Svg';
 import Icon from '../Icon';
@@ -51,13 +50,12 @@ function Header({
               />
             )}
             <div className="ml-4">
-              {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Svg name="logo-ohif" />}
+              <p className='text-white'>D-Treat DICOM Viewer software</p>
             </div>
           </div>
         </div>
         <div className="flex items-center">{children}</div>
         <div className="flex items-center">
-          <span className="text-common-light mr-3 text-lg">{t('INVESTIGATIONAL USE ONLY')}</span>
           <Dropdown
             id="options"
             showDropdownIcon={false}

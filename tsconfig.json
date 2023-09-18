@@ -9,6 +9,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "sourceMap": true,
+    "strict": false,
     "declaration": true,
     "moduleResolution": "node",
     "outDir": "./dist",
